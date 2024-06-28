@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text with Background Image</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 100vh;
+        background-color: #000000;
+      }
+      .text__bg {
+        font-size: 235px;
+        font-weight: 900;
+      }
+      .text-bg-image {
+        font-size: 835px;
+        font-weight: 900;
+        text-align: center;
+        background: url(/img/iiiiiii.jpg);
+        color: white;
+        -webkit-background-clip: text;
+        background-size: 379px;
+        background-position-y: 200px;
+        background-position-x: 2px;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+      .text-bg-img-2 {
+        font-size: 835px;
+        font-weight: 900;
+        text-align: center;
+        background: url(/img/ii.jpg);
+        color: white;
+        -webkit-background-clip: text;
+        background-position-x: 84px;
+        background-position-y: 215px;
+        /* right: 119px; */
+        position: relative;
+        background-size: 200px;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+      .between__content {
+        position: relative;
+        color: #4caf50;
+        font-size: 24px;
+      }
+
+      .between__content::before {
+        content: "SAHANI";
+        position: absolute;
+        top: 164px;
+        font-size: 90px;
+        font-weight: 900;
+        left: -265px;
+        color: #ceced7;
+        color: #9c27b0;
+        background-image: -webkit-radial-gradient(
+          circle,
+          #9c27b0 42%,
+          #e91e63 0%,
+          #4caf50 89%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+      .heart {
+        position: relative;
+      }
+
+      .heart::before {
+        content: "\f21e";
+        font-family: fontawesome;
+        color: #fbc976;
+        left: -138px;
+        position: absolute;
+        font-size: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-bg-image">P</div>
+    <div class="between__content"><span class="heart"></span></div>
+    <div class="text-bg-img-2">I</div>
+  </body>
+</html>

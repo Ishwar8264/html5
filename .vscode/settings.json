@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5501,
+    "lldb.displayFormat": "auto",
+    "lldb.showDisassembly": "auto",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "commands"
+}

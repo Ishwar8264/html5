@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link in Bio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+  <header class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl">My Bio</h1>
+    </div>
+  </header>
+
+  <main class="container mx-auto mt-8 px-4">
+    <section class="text-center">
+      <img src="profile.jpg" alt="Profile Picture" class="mx-auto rounded-full w-32 h-32 mb-4">
+      <h2 class="text-2xl font-semibold mb-2">John Doe</h2>
+      <p class="text-gray-700">Web Developer & Designer</p>
+    </section>
+
+    <section class="mt-8">
+      <ul class="list-none">
+        <li class="mb-4">
+          <a href="https://example.com" class="flex items-center p-4 bg-white rounded shadow hover:bg-gray-100">
+            <img src="link-icon1.svg" alt="Icon" class="w-6 h-6 mr-3">
+            <span class="text-gray-800">Example Link 1</span>
+          </a>
+        </li>
+        <li class="mb-4">
+          <a href="https://example.com" class="flex items-center p-4 bg-white rounded shadow hover:bg-gray-100">
+            <img src="link-icon2.svg" alt="Icon" class="w-6 h-6 mr-3">
+            <span class="text-gray-800">Example Link 2</span>
+          </a>
+        </li>
+        <!-- Add more links as needed -->
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-4 mt-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 John Doe</p>
+      <!-- Optional social media links -->
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        console.log(`Link clicked: ${link.href}`);
+        // You can send this data to an analytics service
+      });
+    });
+  </script>
+  
+</body>
+</html>
